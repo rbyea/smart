@@ -1,0 +1,36 @@
+@import "fonts"
+@import "mixins"
+@import "var"
+
+@import "header"
+  
+body
+  margin: 0
+  padding: 0
+  color: $text
+  
+.container
+  width: 1140px
+  margin: 0 auto
+
+.button
+  outline: none
+  cursor: pointer
+  border: 1px solid #99cc53
+  background-color: #8ec740
+  color: #ffffff
+  +light
+  font-size: 13px
+  line-height: 24px
+  border-radius: 5px
+  width: 164px
+  height: 45px
+  font-size: 12px
+  +mid
+  line-height: 21.47px
+  text-transform: uppercase
+  border-radius: 22px
+  &:hover
+    background-color: #6ca322
+    transition: 1s ease
+  
