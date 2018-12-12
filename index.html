@@ -40,19 +40,51 @@
       <div class="container">
         <div class="header-navbar__list">
           <ul class="header-navbar__ul">
-            <li class="header-navbar__li"><a href="#">Главная</a></li>
-            <li class="header-navbar__li"><a href="#">О компании</a></li>
-            <li class="header-navbar__li"><a href="#">Клиентам</a></li>
-            <li class="header-navbar__li"><a href="#">Наши Цены</a></li>
-            <li class="header-navbar__li"><a href="#">Мы выполняем</a></li>
-            <li class="header-navbar__li"><a href="#">Готовые работы</a></li>
-            <li class="header-navbar__li"><a href="#">Контакты</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Главная</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">О компании</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Клиентам</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Наши Цены</a></li>
+            <li class="header-navbar__li li-five"><a class="header-navbar__a" href="#">Мы выполняем</a>
+              <ul class="ul-dropdown">
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">Курсовые работы на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">дипломные работы на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">контрольные работы на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">рефераты на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">отчеты о практике на заказ</a></li>
+              </ul>
+            </li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Готовые работы</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Контакты</a></li>
           </ul>
         </div>
       </div>
     </div>
-    </div>
   </header>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback-content">
+        <div class="feedback-content__form">
+          <h3 class="feedback-content__form_title">Мы пишем уникальные дипломные, курсовые<br> и контрольные работы</h3>
+          <div class="feedback-content__form_subtitle">
+            Заполните форму ниже и с Вами свяжется наш менеджер, 
+            чтобы обсудить детали и ответить на все Ваши вопросы
+          </div>
+          <form action="#">
+            <input class="feedback-content__list" type="text" placeholder="Ваше имя*">
+            <input class="feedback-content__list" type="tel" placeholder="Ваш телефон*">
+            <input class="feedback-content__list" type="text" placeholder="Тип работы*">
+            <button type="submit" class="button">Заказать работу</button>
+            <a class="feedback-content__blank" href="#">Указать дополнительные требования</a>
+          </form>
+        </div>
+        <div class="feedback-content__image">
+          <img src="img/feedback/bg-image.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 
 </html>
