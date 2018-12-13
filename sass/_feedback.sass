@@ -1,19 +1,28 @@
 .feedback
   background: url("../img/feedback/bgi-feedback.png") no-repeat center 100%
+  background-size: cover
+  padding-top: 32px
+  padding-bottom: 37px
   &-content
     display: flex
     justify-content: space-between
-    &__list
-      width: 195px
-      height: 45px
-      border: 1px solid rgba(0, 0, 0, 0.05)
-      border-radius: 40px
-      padding-left: 25px
-      outline: none
-      margin-bottom: 20px
+    &__image
+      padding-bottom: 10px
+      img
+        width: 411px
+        height: 411px
+    &__form
+      &_list
+        width: 195px
+        height: 41px
+        border: 1px solid rgba(0, 0, 0, 0.05)
+        border-radius: 40px
+        padding-left: 25px
+        outline: none
+        margin-bottom: 20px
+        margin-left: 10px
     &__form
       width: 680px
-      padding-top: 93px
       &_title
         font-size: 30px
         +light
@@ -26,6 +35,9 @@
     &__blank
         text-decoration: none
         position: relative
+        height: 20px
+        margin-top: 30px
+        margin-left: 40px
         &:before
           content: ''
           border-bottom-style: dotted
@@ -34,4 +46,55 @@
           width: 100%
           bottom: 0
           position: absolute
-        
+    &__btn
+      width: 203px
+      height: 53px
+
+form 
+  margin-top: 20px
+  display: flex
+  flex-wrap: wrap
+
+select
+  background: white
+  border: 1px solid white
+  width: 196px
+  height: 45px
+  outline: none
+  border-radius: 40px
+  padding-left: 25px
+  appearance: none
+  color: #363636
+
+.form
+  &__select
+    position: relative
+    margin-left: 10px
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      cursor: pointer
+      width: 8px
+      height: 2px
+      background-color: #8ec740
+      transform: rotate(-27deg)
+      top: 22px
+      right: 20px
+      z-index: 1
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      cursor: pointer
+      width: 8px
+      height: 2px
+      background-color: #8ec740
+      transform: rotate(-150deg)
+      top: 22px
+      right: 26px
+      z-index: 1
+    select
+      option
+        outline: none
+        border: none
