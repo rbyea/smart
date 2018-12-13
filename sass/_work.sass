@@ -1,0 +1,48 @@
+.work
+  padding-top: 40px
+  padding-bottom: 85px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    &__block
+      width: 263px
+      height: 385px
+      background-color: $accent
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-image
+        &_one
+          margin-top: 37px
+        &_two
+          margin-top: 42px
+        &_three
+          margin-top: 38px
+        &_four
+          margin-top: 40px
+      &_title
+        color: #009ac0
+        font-size: 18px
+        +bold
+        line-height: 33px
+        position: relative
+        &:before
+          content: ''
+          bottom: 0
+          left: 19%
+          height: 1px
+          width: 106px
+          background-color: #009ac0
+          position: absolute
+      &_text
+        text-align: center
+        margin: 18px auto
+        width: 226px
+        height: 150px
+        font-size: 14px
+        +light
+        line-height: 18px
+      &_btn
+        width: 164px
+        height: 45px
+        text-transform: capitalize

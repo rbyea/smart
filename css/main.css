@@ -308,6 +308,7 @@
 .header-content__btns_feedback {
   width: 164px;
   height: 45px;
+  text-transform: uppercase;
 }
 
 .feedback {
@@ -343,7 +344,10 @@
   padding-left: 25px;
   outline: none;
   margin-bottom: 20px;
-  margin-left: 10px;
+}
+
+.feedback-content__form_list:first-child {
+  margin-right: 10px;
 }
 
 .feedback-content__form {
@@ -384,6 +388,11 @@
 .feedback-content__btn {
   width: 203px;
   height: 53px;
+  text-transform: uppercase;
+}
+
+.feedback-content__btn:focus {
+  outline: none;
 }
 
 form {
@@ -407,6 +416,7 @@ select {
      -moz-appearance: none;
           appearance: none;
   color: #363636;
+  cursor: pointer;
 }
 
 .form__select {
@@ -449,6 +459,86 @@ select {
   border: none;
 }
 
+.work {
+  padding-top: 40px;
+  padding-bottom: 85px;
+}
+
+.work-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-wrap__block {
+  width: 263px;
+  height: 385px;
+  background-color: #e6f4f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-wrap__block-image_one {
+  margin-top: 37px;
+}
+
+.work-wrap__block-image_two {
+  margin-top: 42px;
+}
+
+.work-wrap__block-image_three {
+  margin-top: 38px;
+}
+
+.work-wrap__block-image_four {
+  margin-top: 40px;
+}
+
+.work-wrap__block_title {
+  color: #009ac0;
+  font-size: 18px;
+  font-family: 'Roboto Bold', sans-serif;
+  line-height: 33px;
+  position: relative;
+}
+
+.work-wrap__block_title:before {
+  content: '';
+  bottom: 0;
+  left: 19%;
+  height: 1px;
+  width: 106px;
+  background-color: #009ac0;
+  position: absolute;
+}
+
+.work-wrap__block_text {
+  text-align: center;
+  margin: 18px auto;
+  width: 226px;
+  height: 150px;
+  font-size: 14px;
+  font-family: 'Roboto Light', sans-serif;
+  line-height: 18px;
+}
+
+.work-wrap__block_btn {
+  width: 164px;
+  height: 45px;
+  text-transform: capitalize;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -473,7 +563,6 @@ body {
   font-size: 12px;
   font-family: 'Roboto Medium', sans-serif;
   line-height: 21.47px;
-  text-transform: uppercase;
   border-radius: 22px;
 }
 
