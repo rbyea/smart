@@ -163,6 +163,26 @@
   color: #009ac0;
 }
 
+.humburger-inner {
+  background-color: #fff;
+}
+
+.humburger-inner:before {
+  background-color: #fff;
+}
+
+.humburger-inner:after {
+  background-color: #fff;
+}
+
+.humburger-wrap {
+  display: none;
+}
+
+#mmenu {
+  z-index: 2;
+}
+
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,8 +645,11 @@ body {
 }
 
 @media only screen and (max-width: 1205px) {
-  .header-navbar__list {
+  .header-navbar {
     display: none;
+  }
+  .humburger-wrap {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=main.css.map */
