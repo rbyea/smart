@@ -12,6 +12,8 @@
         width: 411px
         height: 411px
     &__form
+      &_add
+        display: none
       &_list
         width: 195px
         height: 41px
@@ -39,6 +41,11 @@
         height: 20px
         margin-top: 30px
         margin-left: 40px
+        color: #009ac0
+        font-size: 12px
+        +mid
+        line-height: 24px
+        text-transform: uppercase
         &:before
           content: ''
           border-bottom-style: dotted
@@ -47,6 +54,9 @@
           width: 100%
           bottom: 0
           position: absolute
+          outline: none
+        &:foucus
+          outline: none
     &__btn
       width: 203px
       height: 53px
@@ -103,3 +113,20 @@ select
       option
         outline: none
         border: none
+
+.add-link__visible
+  display: flex
+  flex-wrap: wrap
+  padding-top: 4px
+  input
+    width: 195px
+    height: 41px
+    border: 1px solid rgba(0, 0, 0, 0.05)
+    background-color: #ffffff
+    border-radius: 20px
+    outline: none
+    padding-left: 25px
+    margin-right: 10px
+
+.add-blank_visible
+  margin-left: 33%

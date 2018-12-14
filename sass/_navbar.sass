@@ -86,14 +86,38 @@
         color: #009ac0
 
 .humburger
-  &-inner
-    background-color: #fff
-    &:before
-      background-color: #fff
-    &:after
-      background-color: #fff
   &-wrap
+    position: relative
+    width: 26px
+    height: 19px
+    margin-top: 22px
+    margin-right: 22px
     display: none
-
-#mmenu
-  z-index: 2
+    span
+      position: absolute
+      top: 50%
+      margin-top: -1.5px
+      width: 26px
+      height: 3px
+      background-color: #8ec740
+      border-radius: 10px
+      &:before
+        content: ''
+        transform: translateY(-8px)
+        position: absolute
+        top: 50%
+        margin-top: -1.5px
+        width: 26px
+        height: 3px
+        background-color: #8ec740
+        border-radius: 10px
+      &:after
+        content: ''
+        transform: translateY(8px)
+        position: absolute
+        top: 50%
+        margin-top: -1.5px
+        width: 26px
+        height: 3px
+        background-color: #8ec740
+        border-radius: 10px

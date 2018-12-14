@@ -11,41 +11,43 @@
   });
 
   $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-      loop: false,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        600: {
-          items: 3,
-          nav: false
-        },
-        1000: {
-          items: 0,
-          nav: false,
-          loop: false
-        }
-      }
-    })
-  });
 
-
-  $(document).ready(function () {
-    $("#mmenu").mmenu({
-      "slidingSubmenus": false,
-      navbar: {
-        title: false
-      }
+    $('.feedback-content__blank').on('click', function () {
+      $('.add-link').toggleClass('add-link__visible')
     });
 
-    var api = $("#mmenu").data( "mmenu" );
-    api.bind('open:finish', function () {
-      $('.hamburger').addClass('is-active');
-    }).bind('close:finish', function(){
-        $('.hamburger').removeClass('is-active');
-      });
   });
+
+  $(document).ready(function () {
+
+    $('.feedback-content__blank').on('click', function () {
+      $('.add-blank_link').toggleClass('add-blank_visible')
+    });
+
+  });
+
+  $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true, //Зацикливаем слайдер
+            margin: 50, //Отступ от элемента справа в 50px
+            nav: true, //Отключение навигации
+            autoplay: false, //Автозапуск слайдера
+            smartSpeed: 1000, //Время движения слайда
+            responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 4
+              }
+            }
+        });
+        $(window).resize(function () {
+          if ($(window).width() > 768) {
+            owlProjects.trigger('destroy.owl-carousel');
+          }
+        });
+      });

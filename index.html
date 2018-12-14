@@ -8,21 +8,15 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.mmenu.css">
-  <link rel="stylesheet" href="css/hamburgers.css">
   <title>Образовательный центр</title>
 </head>
 
 <body>
-  <header class="header mm-page mm-slideout">
+  <header class="header">
     <div class="container">
       <div class="header-content">
-        <a class="humburger-wrap" href="#mmenu">
-          <div class="hamburger hamburger--collapse">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
-            </div>
-          </div>
+        <a class="humburger-wrap">
+          <span></span>
         </a>
         <div class="header-content__phone">
           <img src="img/header/phone.png" alt="phone">
@@ -45,57 +39,44 @@
           <button class="button_o header-content__btns_transparent">вход в личный кабинет</button>
           <button class="button header-content__btns_feedback">Заказать работу</button>
         </div>
+        <div class="header-content__logo_mobile">
+          <div class="header-content__logo_tranparent">
+            <img src="img/header/2-layers.png" alt="one">
+          </div>
+          <div class="header-content__logo_green">
+            <img src="img/header/3-layers.png" alt="two">
+          </div>
+        </div>
+        <!-- /.header-content__logo_mobile -->
       </div>
     </div>
     <div class="header-navbar">
       <div class="container">
-        <div id="my-page">
-          <nav class="header-navbar__list">
-            <ul class="header-navbar__ul">
-              <li class="header-navbar__li section action"><a class="header-navbar__a" href="#">Главная</a></li>
-              <li class="header-navbar__li"><a class="header-navbar__a" href="#">О компании</a></li>
-              <li class="header-navbar__li"><a class="header-navbar__a" href="#">Клиентам</a></li>
-              <li class="header-navbar__li"><a class="header-navbar__a" href="#">Наши Цены</a></li>
-              <li class="header-navbar__li li-five"><a class="header-navbar__a" href="#">Мы выполняем</a>
-                <ul class="ul-dropdown">
-                  <li class="li-dropdown"><a href="#" class="li-dropdown__link">Курсовые работы на заказ</a></li>
-                  <li class="li-dropdown"><a href="#" class="li-dropdown__link">дипломные работы на заказ</a></li>
-                  <li class="li-dropdown"><a href="#" class="li-dropdown__link">контрольные работы на заказ</a></li>
-                  <li class="li-dropdown"><a href="#" class="li-dropdown__link">рефераты на заказ</a></li>
-                  <li class="li-dropdown"><a href="#" class="li-dropdown__link">отчеты о практике на заказ</a></li>
-                </ul>
-              </li>
-              <li class="header-navbar__li"><a class="header-navbar__a" href="#">Готовые работы</a></li>
-              <li class="header-navbar__li"><a class="header-navbar__a" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="header-navbar__list">
+          <ul class="header-navbar__ul">
+            <li class="header-navbar__li section action"><a class="header-navbar__a" href="#">Главная</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">О компании</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Клиентам</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Наши Цены</a></li>
+            <li class="header-navbar__li li-five"><a class="header-navbar__a" href="#">Мы выполняем</a>
+              <ul class="ul-dropdown">
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">Курсовые работы на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">дипломные работы на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">контрольные работы на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">рефераты на заказ</a></li>
+                <li class="li-dropdown"><a href="#" class="li-dropdown__link">отчеты о практике на заказ</a></li>
+              </ul>
+            </li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Готовые работы</a></li>
+            <li class="header-navbar__li"><a class="header-navbar__a" href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
 
-  <nav id="mmenu">
-    <ul >
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">О компании</a></li>
-      <li><a href="#">Клиентам</a></li>
-      <li><a href="#">Наши Цены</a></li>
-      <li><a href="#">Мы выполняем</a>
-        <ul>
-          <li><a href="#" class="li-dropdown__link">Курсовые работы на заказ</a></li>
-          <li><a href="#" class="li-dropdown__link">дипломные работы на заказ</a></li>
-          <li><a href="#" class="li-dropdown__link">контрольные работы на заказ</a></li>
-          <li><a href="#" class="li-dropdown__link">рефераты на заказ</a></li>
-          <li><a href="#" class="li-dropdown__link">отчеты о практике на заказ</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Готовые работы</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </nav>
 
-
-  <section class="feedback mm-page mm-slideout">
+  <section class="feedback">
     <div class="container">
       <div class="feedback-content">
         <div class="feedback-content__form">
@@ -117,8 +98,12 @@
                 <option>Отчет о практике</option>
               </select>
             </div>
+            <div class="feedback-content__form_add add-link add-link__mobile">
+              <input type="text" class="feedback-content__form_input-link" placeholder="Срок выполнения*">
+              <input type="tel" class="feedback-content__form_input-link" placeholder="Количество страниц*">
+            </div>
             <button type="submit" class="button feedback-content__btn">Заказать работу</button>
-            <a class="feedback-content__blank" href="#">Указать дополнительные требования</a>
+            <a class="feedback-content__blank add-blank_link" href="#">Указать дополнительные требования</a>
           </form>
         </div>
         <div class="feedback-content__image">
@@ -130,7 +115,7 @@
 
   <div class="work">
     <div class="container">
-      <div class="work-wrap ">
+      <div class="work-wrap  owl-carousel">
         <div class="work-wrap__block">
           <img class="work-wrap__block-image_one" src="img/work/boock.png" alt="book">
           <div class="work-wrap__block_title">Курсовые на заказ</div>
@@ -172,9 +157,13 @@
       </div>
     </div>
   </div>
+  <section class="reviews">
+    <div class="container"></div>
+    <div class="reviews-content"></div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery.mmenu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
 </body>
