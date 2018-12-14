@@ -1,0 +1,43 @@
+.reviews
+  &-content
+    &__title
+      text-align: center
+      font-size: 24px
+      +light
+      margin-bottom: 40px
+      margin-top: 0
+    &__block
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &_entrails
+        display: flex
+        width: 560px
+        margin-bottom: 40px
+      &-text
+        background-color: #F2F8FA
+        width: 435px
+        margin-left: 25px
+        position: relative
+        padding: 28px 27px 30px 43px
+        border-radius: 10px
+        &:before
+          content: ''
+          left: -17px
+          top: 50px
+          position: absolute
+          height: 20px
+          width: 17px
+          background: url("../img/reviews/arrow-t.png")
+          transform: rotate(180deg)
+        &_h
+          color: #464646
+          font-size: 17px
+          +mid
+          margin-bottom: 4px
+        &_l
+          color: #464646
+          font-size: 17px
+          +light
+          line-height: 25px
+          text-align: justify

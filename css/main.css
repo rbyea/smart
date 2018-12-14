@@ -629,6 +629,69 @@ select {
   max-width: 100%;
 }
 
+.reviews-content__title {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Roboto Light', sans-serif;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.reviews-content__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews-content__block_entrails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 560px;
+  margin-bottom: 40px;
+}
+
+.reviews-content__block-text {
+  background-color: #F2F8FA;
+  width: 435px;
+  margin-left: 25px;
+  position: relative;
+  padding: 28px 27px 30px 43px;
+  border-radius: 10px;
+}
+
+.reviews-content__block-text:before {
+  content: '';
+  left: -17px;
+  top: 50px;
+  position: absolute;
+  height: 20px;
+  width: 17px;
+  background: url("../img/reviews/arrow-t.png");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.reviews-content__block-text_h {
+  color: #464646;
+  font-size: 17px;
+  font-family: 'Roboto Medium', sans-serif;
+  margin-bottom: 4px;
+}
+
+.reviews-content__block-text_l {
+  color: #464646;
+  font-size: 17px;
+  font-family: 'Roboto Light', sans-serif;
+  line-height: 25px;
+  text-align: justify;
+}
+
 body {
   margin: 0;
   padding: 0;
