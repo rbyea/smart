@@ -1,0 +1,51 @@
+.footer
+  background-color: #f5fbfd
+  padding-top: 33px
+  padding-bottom: 46px
+  position: relative
+  &:before
+    content: ''
+    height: 1px
+    width: 100%
+    background-color: #d6ebf2
+    position: absolute
+    top: 0
+  &-content
+    display: flex
+    justify-content: space-between
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      height: 1px
+      width: 115%
+      bottom: -71px
+      left: -76px
+      background-color: #d6ebf2
+    img
+      &:nth-child(1)
+        margin-right: 10px
+    &__box
+      display: flex
+      font-size: 14px
+      +light
+      line-height: 20px
+      img
+        width: 33px
+        height: 26px
+      &_text
+        &-subtitle
+          a
+            color: #363636
+            text-decoration: none
+        &-title
+          +mid
+  &-close
+    text-align: center
+    margin-top: 120px
+.tel
+  width: 28px
+  height: 30px
+.ms
+  width: 28px
+  height: 25px
