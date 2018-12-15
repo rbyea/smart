@@ -29,10 +29,12 @@
   $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             loop: true, //Зацикливаем слайдер
-            margin: 50, //Отступ от элемента справа в 50px
+            mouseDrag: false,
+            margin: 30, //Отступ от элемента справа в 50px
             nav: true, //Отключение навигации
             autoplay: false, //Автозапуск слайдера
             smartSpeed: 1000, //Время движения слайда
+            navText: ["<img src='img/work/arrow-left.png'>", "<img src='img/work/arrow-right.png'>"],
             responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
               0: {
                 items: 1
@@ -41,13 +43,14 @@
                 items: 2
               },
               1000: {
+                items: 2
+              },
+              1204: {
+                items: 2
+              },
+              1205: {
                 items: 4
               }
             }
         });
-        $(window).resize(function () {
-          if ($(window).width() > 768) {
-            owlProjects.trigger('destroy.owl-carousel');
-          }
-        });
-      });
+  });
