@@ -27,7 +27,7 @@
   });
 
   $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".slider1").owlCarousel({
             loop: true, //Зацикливаем слайдер
             mouseDrag: false,
             margin: 30, //Отступ от элемента справа в 50px
@@ -50,6 +50,54 @@
               },
               1205: {
                 items: 4
+              }
+            }
+        });
+  });
+
+  $(document).ready(function () {
+        $(".slider2").owlCarousel({
+            loop: false, //Зацикливаем слайдер
+            mouseDrag: false,
+            margin: 580, //Отступ от элемента справа в 50px
+            nav: true, //Отключение навигации
+            autoplay: false, //Автозапуск слайдера
+            smartSpeed: 1000, //Время движения слайда
+            navText: ["<img class='images-slide' src='img/reviews/arrow-left-green.png'>", "<img class='images-slide2' src='img/reviews/arrow-right-green.png'>"],
+            responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+              0: {
+                items: 1,
+                nav: true,
+                margin: 50
+              },
+              320: {
+                items: 1,
+                nav: true,
+                margin: 250
+              },
+              600: {
+                items: 1,
+                nav: true,
+                margin: 10
+              },
+              1000: {
+                items: 1,
+                nav: true,
+                margin: 10
+              },
+              1004: {
+                items: 1,
+                nav: true,
+                margin: 10
+              },
+              1127: {
+                items: 2,
+                nav: true,
+                margin: 10
+              },
+              1230: {
+                items: 4,
+                nav: false
               }
             }
         });
