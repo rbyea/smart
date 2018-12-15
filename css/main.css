@@ -667,16 +667,16 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 560px;
+  width: 549px;
   margin-bottom: 40px;
 }
 
 .reviews-content__block-text {
   background-color: #F2F8FA;
-  width: 435px;
+  width: 423px;
   margin-left: 25px;
   position: relative;
-  padding: 28px 27px 30px 43px;
+  padding: 10px 18px 27px 29px;
   border-radius: 10px;
 }
 
@@ -983,6 +983,10 @@ select {
   outline: none;
 }
 
+.modal-content__form_transperent select {
+  margin-left: 0;
+}
+
 .modal-content__form_btn {
   height: 53px;
   margin-top: 15px;
@@ -990,6 +994,10 @@ select {
 
 .first-input {
   margin-bottom: 15px;
+}
+
+.selct-modal {
+  margin-left: 0;
 }
 
 body {

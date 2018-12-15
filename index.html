@@ -75,17 +75,28 @@
     </div>
   </header>
 
-<div class="modal open modall-callback">
+  <div class="modal open modall-callback">
     <div class="modal-window">
-    <div class="modal-content_close">✖</div>
+      <div class="modal-content_close">✖</div>
       <div class="modal-content">
         <div class="modal-content__form">
           <h2 class="modal-content__form_title">Узнать подробности</h2>
           <div class="modal-content__form_subtitle">Заполните поля ниже - мы свяжеимя с Вами</div>
           <form action="#" class="modal-content__form_feedback">
             <div class="success"></div>
-            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="modal-content__form_transperent" placeholder="Ваш телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}">
+            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваше имя"  required>
+            <input type="tel" name="phone" class="modal-content__form_transperent" placeholder="Ваш телефон"  required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}">
+            <input name="mail" class="modal-content__form_transperent" placeholder="Ваш телефон" type="email" id="email"pattern=".+@globex.com" required>
+            <div class="form__select modal-content__form_transperent select-modal">
+              <select id="select" name="Услуга" required>
+                <option value="">Тип работы*</option>
+                <option class="option">Курсовая работа </option>
+                <option>Дипломная работа </option>
+                <option>Контрольная работа</option>
+                <option>Реферат </option>
+                <option>Отчет о практике</option>
+              </select>
+            </div>
             <button type="submit" class="button modal-content__form_btn">Узнать стоимость</button>
           </form>
         </div>
@@ -272,7 +283,8 @@
       <div class="news-content">
         <div class="news-content__box">
           <div class="news-content__box_data">20 октября 2016</div>
-          <div class="news-content__box_text"><a href="#">Как отпугнуть зрителя за 10 минут: 5 роковых ошибок студентов при<br> созда&shy;нии презентации</a></div>
+          <div class="news-content__box_text"><a href="#">Как отпугнуть зрителя за 10 минут: 5 роковых ошибок студентов
+              при<br> созда&shy;нии презентации</a></div>
         </div>
         <div class="news-content__box">
           <div class="news-content__box_data">13 сентября 2016</div>
@@ -293,15 +305,16 @@
           <div class="footer-content__box_text">
             <div class="footer-content__box_text-title">Адрес:</div>
             <div class="footer-content__box_text-subtitle">г.Минск, ул. Кальварийская, 17, офис 402,<br>
-            ст. метро "Молодежная"</div>
+              ст. метро "Молодежная"</div>
           </div>
         </div>
         <div class="footer-content__box">
           <img class="tel" src="img/footer/phone.png" alt="phone">
           <div class="footer-content__box_text">
             <div class="footer-content__box_text-title">Телефон:</div>
-            <div class="footer-content__box_text-subtitle"><a href="tel:+375291232323">+375(29) 123-23-23</a>, <a href="tel:+375291232323">+375(29) 132-32-32</a><br>
-            <a href="tel:+375291232323">+375(25) 555-55-55</a></div>
+            <div class="footer-content__box_text-subtitle"><a href="tel:+375291232323">+375(29) 123-23-23</a>, <a href="tel:+375291232323">+375(29)
+                132-32-32</a><br>
+              <a href="tel:+375291232323">+375(25) 555-55-55</a></div>
           </div>
         </div>
         <div class="footer-content__box">
