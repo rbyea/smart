@@ -68,32 +68,38 @@
               0: {
                 items: 1,
                 nav: true,
-                margin: 50
+                margin: 50,
+                loop: true
               },
               320: {
                 items: 1,
                 nav: true,
-                margin: 250
+                margin: 250,
+                loop: true
               },
               600: {
                 items: 1,
                 nav: true,
-                margin: 10
+                margin: 10,
+                loop: true
               },
               1000: {
                 items: 1,
                 nav: true,
-                margin: 10
+                margin: 10,
+                loop: true
               },
               1004: {
                 items: 1,
                 nav: true,
-                margin: 10
+                margin: 10,
+                loop: true
               },
               1127: {
                 items: 2,
                 nav: true,
-                margin: 10
+                margin: 10,
+                loop: true
               },
               1230: {
                 items: 4,
