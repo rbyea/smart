@@ -108,3 +108,12 @@
             }
         });
   });
+
+  $(document).ready(function () {
+    $('.btn-top').on('click', function () {
+      $('.modall-callback').toggleClass('modal_visible');
+    });
+    $('.modal-content_close').on('click', function () {
+      $('.modall-callback').toggleClass('modal_visible');
+    });
+  });

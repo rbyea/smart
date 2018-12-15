@@ -1,0 +1,60 @@
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000,  0.52)
+  left: 0
+  top: 0
+  z-index: 3
+  display: flex
+  display: none
+  &-window
+    width: 550px
+    height: 400px
+    background-color: #fff
+    margin: auto
+    display: flex
+    background-color: #e6f4f8
+    border-radius: 20px
+    position: relative
+  &_visible
+    display: flex
+  &-content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0 auto
+    &_close
+      display: flex
+      position: absolute
+      right: 30px
+      top: 20px
+      cursor: pointer
+    &__form
+      text-align: center
+      &_title
+        +mid
+        font-size: 25px
+        margin-top: 0
+      &_subtitle
+        +light
+        font-size: 15px
+      &_feedback
+        display: flex
+        flex-direction: column
+      &_transperent
+        text-align: center
+        height: 45px
+        border: 1px solid rgba(0, 0, 0, 0.05)
+        background-color: #ffffff
+        border-radius: 20px
+        outline: none
+      &_btn
+        height: 53px
+        margin-top: 15px
+
+.first-input
+  margin-bottom: 15px
+        
+
+    

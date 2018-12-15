@@ -37,7 +37,7 @@
         </div>
         <div class="header-content__btns">
           <button class="button_o header-content__btns_transparent">вход в личный кабинет</button>
-          <button class="button header-content__btns_feedback">Заказать работу</button>
+          <button class="button header-content__btns_feedback btn-top">Заказать работу</button>
         </div>
         <div class="header-content__logo_mobile">
           <div class="header-content__logo_tranparent">
@@ -74,6 +74,24 @@
       </div>
     </div>
   </header>
+
+<div class="modal open modall-callback">
+    <div class="modal-window">
+    <div class="modal-content_close">✖</div>
+      <div class="modal-content">
+        <div class="modal-content__form">
+          <h2 class="modal-content__form_title">Узнать подробности</h2>
+          <div class="modal-content__form_subtitle">Заполните поля ниже - мы свяжеимя с Вами</div>
+          <form action="#" class="modal-content__form_feedback">
+            <div class="success"></div>
+            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="modal-content__form_transperent" placeholder="Ваш телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}">
+            <button type="submit" class="button modal-content__form_btn">Узнать стоимость</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="feedback">
     <div class="container">
