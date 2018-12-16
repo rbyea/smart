@@ -109,6 +109,43 @@
         });
   });
 
+$(document).ready(function () {
+  $(".slider3").owlCarousel({
+    loop: true, //Зацикливаем слайдер
+    autoplay: false, //Автозапуск слайдера
+    smartSpeed: 1000, //Время движения слайда
+    navText: ["<img class='about-arrow__left' src='img/about/slider/arrow-left.png'>", "<img class='about-arrow__right' src='img/about/slider/arrow-right.png'>"],
+    responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+      0: {
+        items: 1,
+        nav: true,
+        margin: 0
+      },
+      600: {
+        items: 2,
+        nav: true,
+        margin: 0
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        margin: 0
+      },
+      1204: {
+        items: 2,
+        nav: true,
+        margin: 0
+      },
+      1205: {
+        items: 5,
+        margin: 12,
+        nav: true,
+        margin: 0
+      }
+    }
+  });
+});
+
   $(document).ready(function () {
     $('.btn-top').on('click', function () {
       $('.modall-callback').toggleClass('modal_visible');
