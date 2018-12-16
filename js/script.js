@@ -172,3 +172,9 @@ $(document).ready(function () {
       $('.modall-callback').toggleClass('modal_visible');
     });
   });
+
+
+$(document).ready(function () {
+  $("img").lazyload({ effect: "fadeIn" });
+  $("a[rel='colorbox']").colorbox({ current: "Фото {current} из {total}" });
+});
