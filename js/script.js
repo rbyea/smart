@@ -176,5 +176,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("img").lazyload({ effect: "fadeIn" });
-  $("a[rel='colorbox']").colorbox({ current: "Фото {current} из {total}" });
+  $("a[rel='colorbox']").colorbox({
+    maxWidth: "90%",
+    maxHeight: "90%",
+    opacity: "0.7",
+    current: "Документ"
+  });
 });
