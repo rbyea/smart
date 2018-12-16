@@ -131,7 +131,7 @@
     $('#btn-green').on('click', function () {
       $('.modall-callback').toggleClass('modal_visible');
     });
-    $('.header-menu__close').on('click', function () {
+    $('.modal-content__close').on('click', function () {
       $('.modall-callback').toggleClass('modal_visible');
     });
   });
