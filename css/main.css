@@ -880,6 +880,7 @@ select {
 .footer-close {
   text-align: center;
   margin-top: 120px;
+  font-family: 'Roboto Light', sans-serif;
 }
 
 .tel {
