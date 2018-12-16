@@ -1000,6 +1000,53 @@ select {
   margin-left: 0;
 }
 
+.header-menu {
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 105;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.header-menu__window {
+  width: 90%;
+  position: static;
+}
+
+.header-menu__box {
+  background-color: #009ac0;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-menu__content {
+  background-color: #c4e9f3;
+  height: 100vh;
+}
+
+.header-menu__content ul {
+  margin: 0;
+}
+
+.mobile-menu_visible {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 0;

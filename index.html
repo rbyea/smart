@@ -15,7 +15,7 @@
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <a class="humburger-wrap">
+        <a class="humburger-wrap" id="humburger-btn">
           <span></span>
         </a>
         <div class="header-content__phone">
@@ -75,6 +75,27 @@
     </div>
   </header>
 
+  <div class="header-menu" id="header-menu__mob">
+    <div class="header-menu__window">
+      <div class="header-menu__box">
+        <div class="header-menu__close">✖</div>
+      </div>
+      <div class="header-menu__content">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Что-то еще</a></li>
+          <li><a href="#">Что-то еще</a></li>
+          <li><a href="#">Что-то еще</a></li>
+          <li><a href="#">Что-то еще</a></li>
+          <li><a href="#">Что-то еще</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="modal open modall-callback">
     <div class="modal-window">
       <div class="modal-content_close">✖</div>
@@ -84,9 +105,12 @@
           <div class="modal-content__form_subtitle">Заполните поля ниже - мы свяжеимя с Вами</div>
           <form action="#" class="modal-content__form_feedback">
             <div class="success"></div>
-            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваше имя"  required>
-            <input type="tel" name="phone" class="modal-content__form_transperent" placeholder="Ваш телефон"  required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}">
-            <input name="mail" class="modal-content__form_transperent" placeholder="Ваш телефон" type="email" id="email"pattern=".+@globex.com" required>
+            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваше имя"
+              required>
+            <input type="tel" name="phone" class="modal-content__form_transperent" placeholder="Ваш телефон" required
+              pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{2}{0,1}\d{2}[-]{0,1}\d{3}">
+            <input name="mail" class="modal-content__form_transperent" placeholder="Ваш телефон" type="email" id="email"
+              pattern=".+@globex.com" required>
             <div class="form__select modal-content__form_transperent select-modal">
               <select id="select" name="Услуга" required>
                 <option value="">Тип работы*</option>

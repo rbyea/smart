@@ -117,3 +117,12 @@
       $('.modall-callback').toggleClass('modal_visible');
     });
   });
+
+  $(document).ready(function () {
+    $('#humburger-btn').on('click', function () {
+      $('#header-menu__mob').toggleClass('mobile-menu_visible');
+    });
+    $('.header-menu__close').on('click', function () {
+      $('#header-menu__mob').toggleClass('mobile-menu_visible');
+    });
+  });
