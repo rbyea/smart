@@ -126,3 +126,12 @@
       $('#header-menu__mob').toggleClass('mobile-menu_visible');
     });
   });
+
+  $(document).ready(function () {
+    $('#btn-green').on('click', function () {
+      $('.modall-callback').toggleClass('modal_visible');
+    });
+    $('.header-menu__close').on('click', function () {
+      $('.modall-callback').toggleClass('modal_visible');
+    });
+  });

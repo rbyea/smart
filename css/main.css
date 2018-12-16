@@ -72,6 +72,8 @@
 
 .header-navbar__li:hover {
   background-color: #DCF2F8;
+  -webkit-transform-style: 0.9s esea;
+          transform-style: 0.9s esea;
 }
 
 .header-navbar__a {
@@ -358,6 +360,12 @@
 
 .header-content__logo_mobile {
   display: none;
+}
+
+.btn-green_mobile {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 .feedback {
@@ -909,7 +917,7 @@ select {
 
 .modal-window {
   width: 550px;
-  height: 400px;
+  height: 450px;
   background-color: #fff;
   margin: auto;
   display: -webkit-box;
@@ -994,11 +1002,16 @@ select {
 }
 
 .first-input {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .selct-modal {
   margin-left: 0;
+}
+
+.last-input {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .header-menu {
@@ -1600,6 +1613,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 560px) {
+  .modal-window {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .news {
     padding-bottom: 50px;
@@ -1663,7 +1682,7 @@ a {
 
 @media only screen and (max-width: 450px) {
   .header-content__logo {
-    margin-right: 20%;
+    margin-right: 16%;
   }
   .feedback-content__blank {
     margin-left: 18%;
@@ -1730,6 +1749,21 @@ a {
   .reviews-content__block-text_l {
     font-size: 14px;
     line-height: 12px;
+  }
+  .modal-content_close {
+    top: 12px;
+    right: 16px;
+  }
+  .modal-content__form_feedback {
+    margin: 5px 2%;
+  }
+  .modal-content__form_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .modal-content__form_subtitle {
+    font-size: 13px;
+    margin-bottom: 10px;
   }
   .images-slide {
     bottom: 65px;
