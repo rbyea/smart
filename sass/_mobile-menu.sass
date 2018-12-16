@@ -17,6 +17,11 @@
       height: 56px
       display: flex
       justify-content: flex-end
+      position: relative
+    &__close
+      position: absolute
+      right: 20px
+      top: 15px
     &__content
       background-color: #c4e9f3
       height: 100vh
@@ -24,7 +29,6 @@
         margin: 0
         list-style-type: none
         padding: 0
-        color: #44494a
         font-family: Roboto
         font-size: 14px
         +mid
@@ -49,7 +53,7 @@
         background-color: #009ac0
         opacity: 0.11
         position: absolute
-      a
+      &_black
         text-decoration: none
         color: #44494a
         padding-left: 15px
@@ -58,7 +62,8 @@
       flex-direction: column
       position: absolute
       top: 44px
-      left: 50px
+      left: 0px
+      width: 100%
       &_l
         height: 35px
         position: relative
@@ -71,9 +76,18 @@
           background-color: #009ac0
           opacity: 0.11
           position: absolute
-
-
+        a
+          padding-left: 50px
+      &_link
+        text-decoration: none
+        color: #44494a
 .mobile-five
   position: relative
   margin-bottom: 173px
+  &:before
+    display: none
+  &_blue
+    color: #009ac0
+    text-decoration: none
+    padding-left: 15px
       
