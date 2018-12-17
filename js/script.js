@@ -119,28 +119,53 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: true,
-        margin: 0
+        margin: 10
       },
-      600: {
+      480: {
+        items: 1,
+        nav: true,
+        margin: 10
+      },
+      507: {
+        items: 1,
+        nav: true,
+        margin: 10
+      },
+      745: {
+        items: 1,
+        nav: true,
+        margin: 30,
+        maxWidth: 656
+      },
+      779: {
         items: 2,
         nav: true,
-        margin: 0
+        margin: 30
+      },
+      975: {
+        items: 2,
+        nav: true,
+        margin: 30
       },
       1000: {
         items: 2,
         nav: true,
-        margin: 0
+        margin: 10
       },
       1204: {
         items: 2,
         nav: true,
-        margin: 0
+        margin: 30
       },
       1205: {
-        items: 5,
-        margin: 12,
+        items: 4,
+        margin: 30,
         nav: true,
-        margin: 0
+      },
+      1255: {
+        items: 5,
+        margin: 30,
+        nav: true,
       }
     }
   });

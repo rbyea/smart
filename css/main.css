@@ -1370,10 +1370,6 @@ select {
   padding: 15px 10px 10px 11px;
 }
 
-.container-test {
-  margin-left: 45px;
-}
-
 .about-arrow__left {
   position: absolute;
   left: -22px;
@@ -1381,7 +1377,7 @@ select {
 
 .about-arrow__right {
   position: absolute;
-  right: -4px;
+  right: -14px;
 }
 
 body {
@@ -1618,7 +1614,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 70%;
+    margin-right: 65%;
     text-align-last: left;
   }
   .header-content__logo_tranparent {
@@ -1652,11 +1648,14 @@ a {
   .images-slide2 {
     right: 400px;
   }
+  .about-container__image {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1042px) {
   .header-content__logo {
-    margin-right: 68%;
+    margin-right: 66%;
   }
 }
 
@@ -1723,6 +1722,9 @@ a {
   .add-link__visible input {
     width: 91%;
   }
+  .header-content__logo {
+    margin-right: 63%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1777,6 +1779,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 815px) {
+  .header-content__logo {
+    margin-right: 58%;
+  }
+}
+
 @media only screen and (max-width: 785px) {
   .header-content__logo {
     margin-right: 55%;
@@ -1786,6 +1794,12 @@ a {
   }
   .images-slide2 {
     right: 250px;
+  }
+}
+
+@media only screen and (max-width: 724px) {
+  .header-content__logo {
+    margin-right: 53%;
   }
 }
 
@@ -1801,6 +1815,12 @@ a {
   }
   .images-slide2 {
     right: 180px;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  .header-content__logo {
+    margin-right: 48%;
   }
 }
 
@@ -1877,10 +1897,19 @@ a {
   }
 }
 
-@media only screen and (max-width: 524px) {
+@media only screen and (max-width: 543px) {
+  .header-content__logo {
+    margin-right: 39%;
+  }
+}
+
+@media only screen and (max-width: 535px) {
   .header-content__logo {
     margin-right: 30%;
   }
+}
+
+@media only screen and (max-width: 524px) {
   .feedback-content__blank {
     margin-left: 20%;
   }
@@ -1901,6 +1930,12 @@ a {
   }
   .images-slide2 {
     right: 150px;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .header-content__logo {
+    margin-right: 20%;
   }
 }
 
