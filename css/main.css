@@ -510,6 +510,7 @@ select {
   top: 22px;
   right: 20px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .form__select:after {
@@ -525,6 +526,7 @@ select {
   top: 22px;
   right: 26px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .form__select select option {
@@ -994,6 +996,7 @@ select {
   outline: none;
   margin-left: 0;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .modal-content__form_transperent select {
@@ -1803,6 +1806,17 @@ a {
   .header-navbar__a {
     width: 161px;
   }
+  .contact-form__description-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 1254px) {
@@ -2043,6 +2057,12 @@ a {
   .images-slide2 {
     right: 385px;
   }
+  .contact__location_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -2228,6 +2248,28 @@ a {
   }
 }
 
+@media only screen and (max-width: 634px) {
+  .contact-form__description-box {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .contact-form__description-box label {
+    display: none;
+  }
+  .contact-form__btn {
+    width: 360px;
+  }
+  .footer-area__text {
+    display: none;
+  }
+  .textarea-text {
+    margin-left: 0;
+  }
+  .footer-area {
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (max-width: 625px) {
   .header-content__logo {
     margin-right: 40%;
@@ -2383,6 +2425,32 @@ a {
   }
 }
 
+@media only screen and (max-width: 399px) {
+  .contact-form__description {
+    width: 260px;
+    margin: 0 auto;
+  }
+  .contact-form__description-box {
+    width: 320px;
+  }
+  .contact-form__description-box input {
+    width: 260px;
+  }
+  .contact-form__description-box select {
+    width: 260px;
+  }
+  .contact-form__description-box textarea {
+    width: 260px;
+  }
+  .contact-form__description-box_btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-form__btn {
+    width: 260px;
+  }
+}
+
 @media only screen and (max-width: 390px) {
   .header-content__logo {
     margin-top: 0;
@@ -2455,6 +2523,9 @@ a {
   .modal-content__form_subtitle {
     font-size: 13px;
     margin-bottom: 10px;
+  }
+  .contact-form__title {
+    padding-left: 13px;
   }
   .images-slide {
     bottom: 65px;

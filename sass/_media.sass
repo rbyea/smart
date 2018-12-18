@@ -26,7 +26,14 @@
     &-navbar
       &__a
         width: 161px
-
+  .contact
+    &-form
+      &__description
+        &-box
+          display: flex
+          flex-direction: column
+          margin: 0 auto
+          width: 600px
 @media only screen and (max-width : 1254px)
   .about
     &-arrow
@@ -213,6 +220,10 @@
 
   .images-slide2
     right: 385px
+  .contact
+    &__location
+      &_box
+        flex-direction: column-reverse
 
 @media only screen and (max-width : 992px)
   .button
@@ -266,6 +277,7 @@
     &-content
       &__logo
         margin-right: 63%
+
 @media only screen and (max-width : 900px)
   .images-slide
     left: 320px
@@ -354,6 +366,24 @@
       &__logo
         margin-right: 48%
 
+@media only screen and (max-width : 634px)
+  .contact
+    &-form
+      &__description
+        &-box
+          width: 360px
+          margin: 0 auto
+          label
+            display: none
+      &__btn
+        width: 360px
+  .footer-area__text
+    display: none
+  .textarea-text
+    margin-left: 0
+  .footer
+    &-area
+      margin-bottom: 0
 @media only screen and (max-width : 625px)
   .header
     &-content
@@ -480,6 +510,25 @@
       &_close
         right: 15px
         top: 15px
+@media only screen and (max-width : 399px)
+  .contact
+    &-form
+      &__description
+        width: 260px
+        margin: 0 auto
+        &-box
+          width: 320px
+          input
+            width: 260px
+          select
+            width: 260px
+          textarea
+            width: 260px
+          &_btn
+            margin-left: 0
+            margin-right: 0  
+      &__btn
+        width: 260px
 @media only screen and (max-width : 390px)
   .header
     &-content
@@ -550,6 +599,10 @@
         &_subtitle
           font-size: 13px
           margin-bottom: 10px
+  .contact
+    &-form
+      &__title
+        padding-left: 13px
 
   .images-slide
     bottom: 65px
