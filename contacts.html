@@ -35,11 +35,11 @@
         </div>
         <div class="header-content__btns">
           <button class="button_o header-content__btns_transparent">вход в личный кабинет</button>
-          <button class="button header-content__btns_feedback btn-contact">Заказать работу</button>
+          <button class="button header-content__btns_feedback btn-top">Заказать работу</button>
         </div>
         <div class="header-content__logo_mobile">
           <div class="header-content__logo_tranparent">
-            <img src="img/header/2-layers.png" alt="one">
+            <button id="btn-join" class="btn-green_mobile"><img src="img/header/2-layers.png" alt="one"></button>
           </div>
           <div class="header-content__logo_green">
             <button id="btn-green" class="btn-green_mobile"><img src="img/header/3-layers.png" alt="two"></button>
@@ -73,7 +73,7 @@
     </div>
   </header>
 
-  <div class="header-menu" id="header-menu__mob-c">
+  <div class="header-menu" id="header-menu__mob">
     <div class="header-menu__window">
       <div class="header-menu__box">
         <div class="header-menu__close">✖</div>
@@ -81,7 +81,7 @@
       <div class="header-menu__content">
         <ul>
           <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="index.html">Главная</a></li>
-          <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="about.html">О компании</a></li>
+          <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="#">О компании</a></li>
           <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="#">Клиентам</a></li>
           <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="#">Наши Цены</a></li>
           <li class="mobile-menu__li mobile-five"><a class="mobile-five_blue" href="#">Мы выполняем</a>
@@ -98,13 +98,13 @@
             </ul>
           </li>
           <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="#">Готовые работы</a></li>
-          <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="#">Контакты</a></li>
+          <li class="mobile-menu__li"><a class="mobile-menu__li_black" href="contacts.html">Контакты</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="modal open modall-contact">
+  <div class="modal open modal-callback">
     <div class="modal-window">
       <div class="modal-content_close">✖</div>
       <div class="modal-content">
@@ -135,6 +135,43 @@
       </div>
     </div>
   </div>
+  <div class="modal-join modal-open">
+    <div class="modal-window">
+      <div class="modal-join_close">✖</div>
+      <div class="modal-content">
+        <div class="modal-content__form">
+          <h2 class="modal-content__form_title">Вход в личный кабинет</h2>
+          <form action="#" class="modal-content__form_feedback">
+            <div class="success"></div>
+            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваш логин"
+              required>
+            <input name="pass" class="modal-content__form_transperent index-input" placeholder="Ваш пароль" type="password"
+              id="pass" required>
+            <button type="submit" class="button modal-content__form_btn">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-cont-join">
+    <div class="modal-window">
+      <div class="modal-cont_close">✖</div>
+      <div class="modal-content">
+        <div class="modal-content__form">
+          <h2 class="modal-content__form_title">Вход в личный кабинет</h2>
+          <form action="#" class="modal-content__form_feedback">
+            <div class="success"></div>
+            <input type="text" name="fio" class="modal-content__form_transperent first-input" placeholder="Ваш логин"
+              required>
+            <input name="pass" class="modal-content__form_transperent index-input" placeholder="Ваш пароль" type="password"
+              id="pass" required>
+            <button type="submit" class="button modal-content__form_btn">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <section class="contact">
     <div class="container">
@@ -219,7 +256,7 @@
               </select>
             </div>
             <div class="contact-form__description-box_right-control footer-area">
-              <div>Тема работы (вариант<br> или др.данные)</div>   
+              <div>Тема работы (вариант<br> или др.данные)</div>
               <textarea class="textarea-text" name="text" id="user"></textarea>
             </div>
           </div>
@@ -266,7 +303,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/sctipt-main.js"></script>
 </body>
 
 </html>

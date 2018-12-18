@@ -160,10 +160,16 @@ $(document).ready(function () {
 
   $(document).ready(function () {
     $('.btn-top').on('click', function () {
-      $('.modall-callback').toggleClass('modal_visible');
+      $('.modal-callback').toggleClass('mdl_visible');
     });
-    $('.modal-content_close').on('click', function () {
-      $('.modall-callback').toggleClass('modal_visible');
+    $('.close').on('click', function () {
+      $('.modal-callback').toggleClass('mdl_visible');
+    });
+    $('.btn-join').on('click', function () {
+      $('.modal-open').toggleClass('join-visible');
+    });
+    $('.modal-join_close').on('click', function () {
+      $('.modal-open').toggleClass('join-visible');
     });
   });
 
@@ -177,21 +183,50 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $('#btn-green').on('click', function () {
-      $('.modall-callback').toggleClass('modal_visible');
+    $('.btn-mob').on('click', function () {
+      $('.modall').toggleClass('modall-shadow');
+    });
+    $('.modall-close').on('click', function () {
+      $('.modall').toggleClass('modall-shadow');
+    });
+    
+    $('#btn-join').on('click', function () {
+      $('.modal-open').toggleClass('join-visible');
     });
     $('.modal-content__close').on('click', function () {
-      $('.modall-callback').toggleClass('modal_visible');
+      $('.modal-open').toggleClass('join-visible');
     });
   });
 
-
-$(document).ready(function () {
-  $("img").lazyload({ effect: "fadeIn" });
-  $("a[rel='colorbox']").colorbox({
-    maxWidth: "90%",
-    maxHeight: "90%",
-    opacity: "0.7",
-    current: "Документ"
+  $(document).ready(function () {
+    $("img").lazyload({ effect: "fadeIn" });
+    $("a[rel='colorbox']").colorbox({
+      maxWidth: "90%",
+      maxHeight: "90%",
+      opacity: "0.7",
+      current: "Документ"
+    });
   });
-});
+
+    $(document).ready(function () {
+      $('.btn-about').on('click', function () {
+        $('.modal-calback').toggleClass('mdl_visible');
+      });
+      $('.modal-about_close').on('click', function () {
+        $('.modal-calback').toggleClass('mdl_visible');
+      });
+
+      $('.btn-green_mobl').on('click', function () {
+        $('.about-mob').toggleClass('about-mob-shadow');
+      });
+      $('.modal-mob_close').on('click', function () {
+        $('.about-mob').toggleClass('about-mob-shadow');
+      });
+
+      $('.btn-about-two').on('click', function () {
+        $('.modal-about-two').toggleClass('modal-about-two-shadow');
+      });
+      $('.modal-about_close').on('click', function () {
+        $('.modal-about-two').toggleClass('modal-about-two-shadow');
+      });
+    });
