@@ -122,38 +122,25 @@ $(document).ready(function () {
         margin: 10
       },
       480: {
-        items: 1,
-        nav: true,
-        margin: 10
-      },
-      507: {
-        items: 1,
-        nav: true,
-        margin: 10
-      },
-      745: {
-        items: 1,
-        nav: true,
-        margin: 30,
-        maxWidth: 656
-      },
-      779: {
         items: 2,
+        nav: true
+      },
+      680: {
+        item: 3,
         nav: true,
-        margin: 30
       },
       975: {
-        items: 2,
+        items: 4,
         nav: true,
-        margin: 30
+        margin: 10
       },
       1000: {
-        items: 2,
+        items: 4,
         nav: true,
         margin: 10
       },
       1204: {
-        items: 2,
+        items: 4,
         nav: true,
         margin: 30
       },

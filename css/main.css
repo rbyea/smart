@@ -990,6 +990,8 @@ select {
   background-color: #ffffff;
   border-radius: 20px;
   outline: none;
+  margin-left: 0;
+  margin-top: 10px;
 }
 
 .modal-content__form_transperent select {
@@ -999,10 +1001,6 @@ select {
 .modal-content__form_btn {
   height: 53px;
   margin-top: 15px;
-}
-
-.first-input {
-  margin-bottom: 10px;
 }
 
 .selct-modal {
@@ -1380,6 +1378,10 @@ select {
   right: -14px;
 }
 
+.carousel-item {
+  text-align: center;
+}
+
 .contact {
   padding-top: 36px;
   padding-bottom: 45px;
@@ -1639,7 +1641,13 @@ a {
     width: 90%;
   }
   .header-navbar__a {
-    width: 150px;
+    width: 161px;
+  }
+}
+
+@media only screen and (max-width: 1254px) {
+  .about-arrow__right {
+    right: 35px;
   }
 }
 
@@ -1752,6 +1760,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 1164px) {
+  .header-navbar__a {
+    width: 150px;
+  }
+}
+
 @media only screen and (max-width: 1126px) {
   .reviews-content__block_entrails {
     display: -webkit-box;
@@ -1765,6 +1779,12 @@ a {
   }
   .images-slide2 {
     right: 420px;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .about-arrow__right {
+    right: 20px;
   }
 }
 
@@ -1835,6 +1855,15 @@ a {
   }
 }
 
+@media only screen and (max-width: 1112px) {
+  .about-arrow__right {
+    right: 0px;
+  }
+  .about-arrow__left {
+    left: -15px;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .feedback-content__form_add input {
     width: 90%;
@@ -1868,6 +1897,26 @@ a {
   }
   .images-slide2 {
     right: 355px;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .certificates-content__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    border: none;
+  }
+  .certificates-content__box a {
+    border: 1px solid #cce4ea;
   }
 }
 
@@ -1994,6 +2043,19 @@ a {
   }
 }
 
+@media only screen and (max-width: 670px) {
+  .certificates-content__box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .about-arrow__right {
+    right: 0px;
+  }
+  .about-arrow__left {
+    left: 0px;
+  }
+}
+
 @media only screen and (max-width: 652px) {
   .header-content__logo {
     margin-right: 48%;
@@ -2109,6 +2171,15 @@ a {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .about-arrow__right {
+    right: 54px;
+  }
+  .about-arrow__left {
+    left: 53px;
+  }
+}
+
 @media only screen and (max-width: 466px) {
   .header-content__logo {
     margin-right: 20%;
@@ -2174,6 +2245,15 @@ a {
   }
   .order-content__box ul {
     padding-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .about-arrow__right {
+    right: 20px;
+  }
+  .about-arrow__left {
+    left: 20px;
   }
 }
 
